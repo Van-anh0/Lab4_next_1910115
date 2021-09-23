@@ -34,7 +34,7 @@ namespace Lab4_next_1910115
             ListViewItem lvitem = new ListViewItem(sv.MaSo);
             lvitem.SubItems.Add(sv.HoVaTen);
             lvitem.SubItems.Add(sv.Phai);
-            lvitem.SubItems.Add(sv.NgaySinh.ToShortDateString());
+            lvitem.SubItems.Add(sv.NgaySinh.ToString("dd/MM/yyyy"));
             lvitem.SubItems.Add(sv.Lop);
             lvitem.SubItems.Add(sv.SoDienThoai);
             lvitem.SubItems.Add(sv.Email);

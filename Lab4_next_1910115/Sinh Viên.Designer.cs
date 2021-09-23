@@ -31,6 +31,7 @@ namespace Lab4_next_1910115
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.mtbMSSV = new System.Windows.Forms.MaskedTextBox();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnMacDinh = new System.Windows.Forms.Button();
@@ -64,15 +65,14 @@ namespace Lab4_next_1910115
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.pbPicture = new System.Windows.Forms.PictureBox();
-            this.mtbMSSV = new System.Windows.Forms.MaskedTextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiLoadLv = new System.Windows.Forms.ToolStripMenuItem();
+            this.pbPicture = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -109,6 +109,14 @@ namespace Lab4_next_1910115
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sinh viên";
+            // 
+            // mtbMSSV
+            // 
+            this.mtbMSSV.Location = new System.Drawing.Point(84, 23);
+            this.mtbMSSV.Mask = "0000000";
+            this.mtbMSSV.Name = "mtbMSSV";
+            this.mtbMSSV.Size = new System.Drawing.Size(224, 22);
+            this.mtbMSSV.TabIndex = 15;
             // 
             // btnThoat
             // 
@@ -398,23 +406,6 @@ namespace Lab4_next_1910115
             this.columnHeader9.Text = "Hình";
             this.columnHeader9.Width = 102;
             // 
-            // pbPicture
-            // 
-            this.pbPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbPicture.Location = new System.Drawing.Point(2, 2);
-            this.pbPicture.Name = "pbPicture";
-            this.pbPicture.Size = new System.Drawing.Size(193, 217);
-            this.pbPicture.TabIndex = 2;
-            this.pbPicture.TabStop = false;
-            // 
-            // mtbMSSV
-            // 
-            this.mtbMSSV.Location = new System.Drawing.Point(84, 23);
-            this.mtbMSSV.Mask = "0000000";
-            this.mtbMSSV.Name = "mtbMSSV";
-            this.mtbMSSV.Size = new System.Drawing.Size(224, 22);
-            this.mtbMSSV.TabIndex = 15;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -427,16 +418,25 @@ namespace Lab4_next_1910115
             // tsmiDelete
             // 
             this.tsmiDelete.Name = "tsmiDelete";
-            this.tsmiDelete.Size = new System.Drawing.Size(210, 24);
+            this.tsmiDelete.Size = new System.Drawing.Size(188, 24);
             this.tsmiDelete.Text = "Xóa";
             this.tsmiDelete.Click += new System.EventHandler(this.tsmiDelete_Click);
             // 
             // tsmiLoadLv
             // 
             this.tsmiLoadLv.Name = "tsmiLoadLv";
-            this.tsmiLoadLv.Size = new System.Drawing.Size(210, 24);
+            this.tsmiLoadLv.Size = new System.Drawing.Size(188, 24);
             this.tsmiLoadLv.Text = "Tải lại danh sách";
             this.tsmiLoadLv.Click += new System.EventHandler(this.tsmiLoadLv_Click);
+            // 
+            // pbPicture
+            // 
+            this.pbPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbPicture.Location = new System.Drawing.Point(2, 2);
+            this.pbPicture.Name = "pbPicture";
+            this.pbPicture.Size = new System.Drawing.Size(193, 217);
+            this.pbPicture.TabIndex = 2;
+            this.pbPicture.TabStop = false;
             // 
             // Form1
             // 
@@ -447,13 +447,13 @@ namespace Lab4_next_1910115
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sinh Viên";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.ResumeLayout(false);
 
         }

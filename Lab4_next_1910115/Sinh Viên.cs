@@ -59,6 +59,8 @@ namespace Lab4_next_1910115
             rdbNam.Checked = true;
             cbbLop.Text = cbbLop.Items[0].ToString();
             pbPicture.ImageLocation = "";
+            txtHinh.Text = "";
+            mtbSDT.Text = "";
 
 
         }
@@ -217,8 +219,10 @@ namespace Lab4_next_1910115
                 if (dialog == DialogResult.Yes)
                 {
                     qlsv.LuuThayDoi(qlsv.dsSinhVien);
+                    MessageBox.Show("Cập nhật form thành công!");
                 }
             }
         }
+
     }
 }

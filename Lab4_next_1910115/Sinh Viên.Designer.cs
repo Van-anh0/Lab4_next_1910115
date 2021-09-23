@@ -448,6 +448,7 @@ namespace Lab4_next_1910115
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Sinh Viên";
+         
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
